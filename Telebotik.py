@@ -27,10 +27,17 @@ def start(message):
     keyboards.add(button1,button2)
     keyboards.add(numbut1,numbut2,numbut3,numbut4)
     
+    
 
-    start = bot.send_message(message.chat.id, f'Привет, {message.from_user.first_name}, напиши кол-во переменных' )
+    start = bot.send_message(message.chat.id, f'Привет, {message.from_user.first_name}' )
+
+    time.sleep(0.5)
 
     bot.send_message(message.chat.id, 'Загружаю ваши кнопки...', reply_markup=keyboards)
+    
+    time.sleep(0.5)
+
+    bot.send_message(message.chat.id, "Я готов принять кол-во переменных")
 
     bot.register_next_step_handler(start, zxc)
 
