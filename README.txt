@@ -1,4 +1,4 @@
-to install libraries write this command in terminal
+to install libraries write this commands in terminal
 ---------------------------
 pip install django-environ
 pip install telebot
