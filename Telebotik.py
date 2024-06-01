@@ -49,9 +49,9 @@ def zxc(message):
 
     colichestvo.append(peremennie)
 
-    colvo_peremennih = bot.send_message(message.chat.id, f'Вы выбрали {peremennie} переменных')
+    colvo_peremennih = bot.send_message(message.chat.id, f'Вы выбрали {peremennie} переменных, напишите "/run" что бы запустить код')
 
-
+@bot.message_handler(commands=['run'])
 
 def qwe(message):
     
